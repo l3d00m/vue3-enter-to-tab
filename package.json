@@ -7,7 +7,7 @@
     "lib/**/*"
   ],
   "scripts": {
-    "build": "tsc --project tsconfig.build.json",
+    "build": "tsc --project tsconfig.json",
     "typecheck": "tsc --noEmit"
   },
   "repository": {
