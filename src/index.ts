@@ -17,7 +17,7 @@ export function useEnterToTab(
   element: MaybeRefOrGetter<HTMLElement | null | undefined>,
   options: UseEnterToTabOptions = {},
 ) {
-  const { autoClickButton = false, initialState = true } = options
+  const { autoClickButton = true, initialState = true } = options
   const isEnterToTabEnabled = ref(initialState)
 
   useEventListener(element, 'keydown', async (e: KeyboardEvent) => {
