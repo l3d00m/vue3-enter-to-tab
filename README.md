@@ -1,10 +1,10 @@
-# vue3-enter-to-tab
+# `vue3-enter-to-tab` composable
 
 [![npm package][npm-img]][npm-url]
 [![Release](https://github.com/l3d00m/vue3-enter-to-tab/actions/workflows/release.yml/badge.svg)](https://github.com/l3d00m/vue3-enter-to-tab/actions/workflows/release.yml)
 [![ci](https://github.com/l3d00m/vue3-enter-to-tab/actions/workflows/ci.yml/badge.svg)](https://github.com/l3d00m/vue3-enter-to-tab/actions/workflows/ci.yml)
 
-A Vue composable to convert the enter key to tab key. Especially useful when using numpads for inputting forms.
+A Vue 3 composable to convert the enter key to tab key on form inputs. Especially useful when using numpads for inputting forms.
 
 This is a fork of [ajomuch92/vue-enter-to-tab](https://github.com/ajomuch92/vue-enter-to-tab) and has been converted from a mixin to a Vue3 composable. It also features new options.
 
@@ -21,8 +21,6 @@ yarn add vue3-enter-to-tab
 
 ## Usage
 
-**Note**: This doesn't work on textarea elements.
-
 ### Minimal example with composition API
 
 ```vue
@@ -38,27 +36,6 @@ import { useEnterToTab } from 'vue3-enter-to-tab'
 const form = ref<HTMLElement | null>(null)
 
 useEnterToTab(form)
-</script>
-```
-
-### Minimal example with options API
-
-The code has not been tested yet and it is recommended to use the composition API instead.
-
-```vue
-<template>
-  <div ref="form"></div>
-</template>
-
-<script lang="ts">
-import { defineComponent, ref } from 'vue'
-import { useEnterToTab } from 'vue3-enter-to-tab'
-
-export default defineComponent({
-  setup() {
-    useEnterToTab(this.$refs.form)
-  },
-})
 </script>
 ```
 
@@ -84,6 +61,27 @@ const { vPreventEnterTab, isEnterToTabEnabled } = useEnterToTab(form, {
 })
 // Read and change the status using that ref
 isEnterToTabEnabled.value = true
+</script>
+```
+
+### Minimal example with options API
+
+The code has not been tested yet and it is recommended to use the composition API instead.
+
+```vue
+<template>
+  <div ref="form"></div>
+</template>
+
+<script lang="ts">
+import { defineComponent, ref } from 'vue'
+import { useEnterToTab } from 'vue3-enter-to-tab'
+
+export default defineComponent({
+  setup() {
+    useEnterToTab(this.$refs.form)
+  },
+})
 </script>
 ```
 
@@ -128,7 +126,5 @@ Directive to use in those inputs you want to avoid use enter as tab. Inputs with
 
 Ref to read and change the status of the function.
 
-```vue
-[npm-img]: https://img.shields.io/npm/v/vue3-enter-to-tab [npm-url]:
-https://www.npmjs.com/package/vue3-enter-to-tab
-```
+[npm-img]: https://img.shields.io/npm/v/vue3-enter-to-tab
+[npm-url]: https://www.npmjs.com/package/vue3-enter-to-tab
