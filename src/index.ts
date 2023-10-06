@@ -6,13 +6,19 @@ import { MaybeRefOrGetter, ref, toValue, nextTick } from 'vue'
 // 2. to use the composable API
 // 3. to use vueuse with useEventListener for automatically removing event listeners
 
+export interface UseEnterToTabOptions {
+  autoClickButton?: boolean
+  initialState?: boolean
+}
+
 type HTMLElementWithPrevent = HTMLElement & { preventEnterTab?: boolean }
 
-export const useEnterToTab = (
+export function useEnterToTab(
   element: MaybeRefOrGetter<HTMLElement | null | undefined>,
-  { autoClickButton = true } = {},
-) => {
-  const isEnterToTabEnabled = ref(true)
+  options: UseEnterToTabOptions = {},
+) {
+  const { autoClickButton = false, initialState = true } = options
+  const isEnterToTabEnabled = ref(initialState)
 
   useEventListener(element, 'keydown', async (e: KeyboardEvent) => {
     const { ctrlKey, code, altKey, shiftKey } = e
@@ -57,10 +63,6 @@ export const useEnterToTab = (
     }
   })
 
-  const setEnterToTabEnabled = (value: boolean) => {
-    isEnterToTabEnabled.value = value
-  }
-
   const vPreventEnterTab = {
     beforeMount: (el: HTMLElementWithPrevent) => (el.preventEnterTab = true),
   }
@@ -68,6 +70,5 @@ export const useEnterToTab = (
   return {
     isEnterToTabEnabled,
     vPreventEnterTab,
-    setEnterToTabEnabled,
   }
 }
