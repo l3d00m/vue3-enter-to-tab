@@ -4,13 +4,13 @@
 [![Release](https://github.com/l3d00m/vue3-enter-to-tab/actions/workflows/release.yml/badge.svg)](https://github.com/l3d00m/vue3-enter-to-tab/actions/workflows/release.yml)
 [![ci](https://github.com/l3d00m/vue3-enter-to-tab/actions/workflows/ci.yml/badge.svg)](https://github.com/l3d00m/vue3-enter-to-tab/actions/workflows/ci.yml)
 
-A Vue 3 composable to convert the enter key to tab key on form inputs. Especially useful when using numpads for inputting forms.
+A Vue 3 composable to convert enter key to tab key. Especially useful when inputting forms using a numpad.
 
-This is a fork of [ajomuch92/vue-enter-to-tab](https://github.com/ajomuch92/vue-enter-to-tab) and has been converted from a mixin to a Vue3 composable. It also features new options.
+This is a fork of [ajomuch92/vue-enter-to-tab](https://github.com/ajomuch92/vue-enter-to-tab) and has been converted from a Mixin to a Vue3 composable. It also features new options.
 
 ## Install
 
-Requires Vue 3.3 or higher.
+Requires Vue >=3.3 and Node >=16.
 
 ```bash
 # npm
@@ -55,6 +55,7 @@ See documentation below.
 import { useEnterToTab } from 'vue3-enter-to-tab'
 import { ref } from 'vue'
 
+const form = ref<HTMLElement | null>(null)
 const { vPreventEnterTab, isEnterToTabEnabled } = useEnterToTab(form, {
   autoClickButton: false,
   initialState: false,
