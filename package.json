@@ -39,7 +39,7 @@
     "ts-node": "10.9.1",
     "typescript": "5.2.2"
   },
-  "packageManager": "yarn@3.6.4",
+  "packageManager": "yarn@4.0.1",
   "dependencies": {
     "@vueuse/core": ">9.x",
     "vue": ">=3.3 <4"
