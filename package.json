@@ -22,7 +22,7 @@
     "url": "https://github.com/l3d00m"
   },
   "engines": {
-    "node": ">=16.0"
+    "node": ">=18.0"
   },
   "keywords": [],
   "bugs": {

@@ -10,7 +10,7 @@ This is a fork of [ajomuch92/vue-enter-to-tab](https://github.com/ajomuch92/vue-
 
 ## Install
 
-Requires Vue >=3.3 and Node >=16.
+Requires Vue >=3.3 and Node >=18.
 
 ```bash
 # npm
