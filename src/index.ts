@@ -1,5 +1,5 @@
 import { useEventListener } from '@vueuse/core'
-import { MaybeRefOrGetter, ref, toValue, nextTick } from 'vue'
+import { Ref, ref, toValue, nextTick } from 'vue'
 
 // source from https://github.com/ajomuch92/vue-enter-to-tab
 // it has been modified to 1. to auto click a button if the next element is a button
@@ -14,7 +14,7 @@ export interface UseEnterToTabOptions {
 type HTMLElementWithPrevent = HTMLElement & { preventEnterTab?: boolean }
 
 export function useEnterToTab(
-  element: MaybeRefOrGetter<HTMLElement | null | undefined>,
+  element: Ref<HTMLElement | null | undefined>,
   options: UseEnterToTabOptions = {},
 ) {
   const { autoClickButton = true, initialState = true } = options
