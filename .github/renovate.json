@@ -2,7 +2,8 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>reims2/renovate",
-    ":disableDependencyDashboard"
+    ":disableDependencyDashboard",
+    ":pinOnlyDevDependencies"
   ],
   "rangeStrategy": "update-lockfile"
 }
