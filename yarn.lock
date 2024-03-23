@@ -832,7 +832,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:^10.8.0":
+"@vueuse/core@npm:10.8.0":
   version: 10.8.0
   resolution: "@vueuse/core@npm:10.8.0"
   dependencies:
@@ -4817,17 +4817,17 @@ __metadata:
     "@semantic-release/commit-analyzer": "npm:12.0.0"
     "@semantic-release/release-notes-generator": "npm:12.1.0"
     "@types/node": "npm:20.11.26"
-    "@vueuse/core": "npm:^10.8.0"
+    "@vueuse/core": "npm:10.8.0"
     conventional-changelog-conventionalcommits: "npm:7.0.2"
     prettier: "npm:3.2.5"
     semantic-release: "npm:23.0.2"
     ts-node: "npm:10.9.2"
     typescript: "npm:5.3.3"
-    vue: "npm:^3.4.19"
+    vue: "npm:3.4.19"
   languageName: unknown
   linkType: soft
 
-"vue@npm:^3.4.19":
+"vue@npm:3.4.19":
   version: 3.4.19
   resolution: "vue@npm:3.4.19"
   dependencies:
