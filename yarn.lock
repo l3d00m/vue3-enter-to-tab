@@ -730,12 +730,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.11.26":
-  version: 20.11.26
-  resolution: "@types/node@npm:20.11.26"
+"@types/node@npm:20.12.3":
+  version: 20.12.3
+  resolution: "@types/node@npm:20.12.3"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 10/37a69017fc0e70bd52e106a7a0de21f78b29a869b2ab7b0539438ee6ce91cb9b49b80d6b68108e88fcc20e24cdc4dc00f6e8e1c28215d93412cb19a303572130
+  checksum: 10/3f3c5c6ba118a18aa997c51cdc3c66259d69021f87475a99ed6c913a6956e22de49748e09843bf6447a7a63ae474e61945a6dbcca93e23b2359fc0b6f9914f7a
   languageName: node
   linkType: hard
 
@@ -4836,7 +4836,7 @@ __metadata:
   dependencies:
     "@semantic-release/commit-analyzer": "npm:12.0.0"
     "@semantic-release/release-notes-generator": "npm:13.0.0"
-    "@types/node": "npm:20.11.26"
+    "@types/node": "npm:20.12.3"
     "@vueuse/core": "npm:^10.8.0"
     conventional-changelog-conventionalcommits: "npm:7.0.2"
     prettier: "npm:3.2.5"
