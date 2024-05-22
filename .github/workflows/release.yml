@@ -31,7 +31,7 @@ jobs:
       - name: Build
         run: yarn build
       - name: Install release deps
-        run: yarn install conventional-changelog-conventionalcommits
+        run: npm install conventional-changelog-conventionalcommits
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
