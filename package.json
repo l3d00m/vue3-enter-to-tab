@@ -8,8 +8,7 @@
   ],
   "scripts": {
     "build": "tsc --project tsconfig.json",
-    "typecheck": "tsc --noEmit",
-    "release": "semantic-release"
+    "typecheck": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
@@ -30,12 +29,8 @@
   },
   "homepage": "https://github.com/l3d00m/vue3-enter-to-tab#readme",
   "devDependencies": {
-    "@semantic-release/commit-analyzer": "12.0.0",
-    "@semantic-release/release-notes-generator": "13.0.0",
     "@types/node": "20.12.5",
-    "conventional-changelog-conventionalcommits": "8.0.0",
     "prettier": "3.2.5",
-    "semantic-release": "23.1.1",
     "ts-node": "10.9.2",
     "typescript": "5.4.3"
   },
