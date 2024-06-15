@@ -36,7 +36,7 @@
   },
   "packageManager": "yarn@4.3.0",
   "dependencies": {
-    "@vueuse/core": "^10.8.0",
+    "@vueuse/core": "^10.10.0",
     "vue": "^3.4.23"
   }
 }
