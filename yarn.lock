@@ -216,7 +216,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:^10.10.0":
+"@vueuse/core@npm:10.11.0":
   version: 10.11.0
   resolution: "@vueuse/core@npm:10.11.0"
   dependencies:
@@ -461,15 +461,15 @@ __metadata:
   resolution: "vue3-enter-to-tab@workspace:."
   dependencies:
     "@types/node": "npm:20.14.2"
-    "@vueuse/core": "npm:^10.10.0"
+    "@vueuse/core": "npm:10.11.0"
     prettier: "npm:3.3.2"
     ts-node: "npm:10.9.2"
     typescript: "npm:5.5.3"
-    vue: "npm:^3.4.31"
+    vue: "npm:3.4.33"
   languageName: unknown
   linkType: soft
 
-"vue@npm:^3.4.31":
+"vue@npm:3.4.33":
   version: 3.4.33
   resolution: "vue@npm:3.4.33"
   dependencies:
