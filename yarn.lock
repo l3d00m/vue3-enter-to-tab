@@ -109,12 +109,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:22.15.23":
-  version: 22.15.23
-  resolution: "@types/node@npm:22.15.23"
+"@types/node@npm:22.15.29":
+  version: 22.15.29
+  resolution: "@types/node@npm:22.15.29"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10/1e121e0232cb61fdf34a86589aa4d43248dafd293be4858ab37acc2fa62cfbb7462bc0c3c8104515ec25ae4d6bf8b7e4a5217f05574ac53fd41e2a19bdca09f6
+  checksum: 10/3426790c5aa22df445213d7f37e57ea261cf3013030fe9b3025d87c302097799a9db3b848e2a9bdb07cab8ec6c7e9947ac770cf11e12e420148296b63d63e7db
   languageName: node
   linkType: hard
 
@@ -469,7 +469,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "vue3-enter-to-tab@workspace:."
   dependencies:
-    "@types/node": "npm:22.15.23"
+    "@types/node": "npm:22.15.29"
     "@vueuse/core": "npm:^11.1.0"
     prettier: "npm:3.5.3"
     ts-node: "npm:10.9.2"
