@@ -224,31 +224,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:11.1.0":
-  version: 11.1.0
-  resolution: "@vueuse/core@npm:11.1.0"
+"@vueuse/core@npm:11.3.0":
+  version: 11.3.0
+  resolution: "@vueuse/core@npm:11.3.0"
   dependencies:
     "@types/web-bluetooth": "npm:^0.0.20"
-    "@vueuse/metadata": "npm:11.1.0"
-    "@vueuse/shared": "npm:11.1.0"
+    "@vueuse/metadata": "npm:11.3.0"
+    "@vueuse/shared": "npm:11.3.0"
     vue-demi: "npm:>=0.14.10"
-  checksum: 10/2ed51d0a49588bf23f18b31e16756b0ddd1a97e1fa426f73e805d76c52d1b51959372f04040e7bdad2d922568afe8a5c6674e6efbeac17624ee843bad17671bf
+  checksum: 10/d68ed84004dd229a8d5136af0863534697f9cfa80d56e5732b91245e493462db172e701bebb7d9d1c509f97b22bc4169ac358a05c57d4cffa2e56c31f968afee
   languageName: node
   linkType: hard
 
-"@vueuse/metadata@npm:11.1.0":
-  version: 11.1.0
-  resolution: "@vueuse/metadata@npm:11.1.0"
-  checksum: 10/3bb0171a275845780678360a8e74591b52ad3a25aba61bee0e57924410918c343ccb94b9317a06e77c92e6e18a7d22ddf46ea51eea930fea6ca9b06053875522
+"@vueuse/metadata@npm:11.3.0":
+  version: 11.3.0
+  resolution: "@vueuse/metadata@npm:11.3.0"
+  checksum: 10/d8b6976896d2bc9924fcbcdaa2f3ffd6f60ff3a13355c92136ed6ad83ee6188d308064f0a8e56d07060b8829b29e41958ec3df9248231859e487a0af0f5e6b2f
   languageName: node
   linkType: hard
 
-"@vueuse/shared@npm:11.1.0":
-  version: 11.1.0
-  resolution: "@vueuse/shared@npm:11.1.0"
+"@vueuse/shared@npm:11.3.0":
+  version: 11.3.0
+  resolution: "@vueuse/shared@npm:11.3.0"
   dependencies:
     vue-demi: "npm:>=0.14.10"
-  checksum: 10/467bd1da45e4cf8d5a9c91129bd7e2cfecd80e896e8fd11e6a85fa28d2743b124faf595fc54e1c00359f721b3faf70c5f9574130c7ab3a30c4891a89c77b80fd
+  checksum: 10/b4463ab36bad4db582f5145ea1c24da22784c5c2a0b2b76d23090daa1a91551c5542b427a04d8c7dbd9cd2c2ebe2db9585021a813688748bfdad89f73a80a962
   languageName: node
   linkType: hard
 
@@ -462,7 +462,7 @@ __metadata:
   resolution: "vue3-enter-to-tab@workspace:."
   dependencies:
     "@types/node": "npm:24.10.1"
-    "@vueuse/core": "npm:11.1.0"
+    "@vueuse/core": "npm:11.3.0"
     prettier: "npm:3.7.1"
     ts-node: "npm:10.9.2"
     typescript: "npm:5.9.3"
